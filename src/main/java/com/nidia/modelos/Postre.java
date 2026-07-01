@@ -34,10 +34,12 @@ public class Postre {
 
 	@NotBlank(message = "Por favor proporciona los ingredientes")
 	@Size(min = 10, message = "Los ingredientes deben tener al menos 10 caracteres")
+	@Column(columnDefinition="TEXT")
 	private String ingredientes;
 
 	@NotBlank(message = "Por favor proporciona las instrucciones")
 	@Size(min = 10, message = "Las instrucciones deben tener al menos 10 caracteres")
+	@Column(columnDefinition="TEXT")
 	private String instrucciones;
 
 	@NotBlank(message = "Por favor proporciona una URL válida con la imagen")
